@@ -30,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 ol, ul {
   list-style: none;
@@ -49,15 +51,19 @@ table {
 
 /* Begin project css */
 
+* {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
+}
+
 body {
   height: 100vh;
-  
   display: flex;
   justify-content: center;
   align-items: center;
   
-  background-image: url(img/bg.svg);
-  background-size: cover;
 }
 
 .title {
@@ -76,8 +82,6 @@ body {
 .viewport {
   width: 100%;
   height: 100%;
-  background-image: url('img/dummy.png');
-  background-size: cover;
 }
 
 .container {
@@ -87,6 +91,7 @@ body {
   align-items: center;
 
   height: 70vh;
+  max-height: 625px;
 /*  border: 1px solid cyan;*/
   position: relative;
 }
@@ -101,26 +106,73 @@ body {
 
 .btn-bg {
   position: absolute;
+  pointer-events: none;
 }
 
 .btn-icon {
+  transition: 0.2s;
   position: absolute;
   left: 6px;
   top: 6px;
   pointer-events: none;
 }
 
+.btn-icon.over {
+  transition: 0.2s;
+  left: 0px;
+  top: 0px;
+  transform: scale(1.1);
+}
+
 .download {
   transition: 0.1s;
   
   position: absolute;
-  top: 93%;
-  left: 290px !important;
+  left: 150px;
+  top: 25px;
 /*  border: 1px solid cyan;*/
   cursor: pointer;
 }
 
 .download:hover {
   transition: 0.1s;
-  top: 92.5%;
+  top: 22px;
+}
+
+#download_link {
+  display: none;
+}
+
+.kettlr {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 2rem;
+  bottom: 0rem;
+}
+
+.kettlr img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 3px;
+}
+
+a {
+  
+  font-family: sans-serif;
+  color: #69A4E6;
+  text-decoration: none; /* no underline */
+  
+}
+
+.kettlr a {
+  padding-left: 0.5rem
+}
+
+canvas {
+  border-radius: 10px;
+}
+
+.bg-img {
+  position: absolute;
 }

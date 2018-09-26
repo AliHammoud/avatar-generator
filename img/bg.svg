@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1440px" height="1024px" viewBox="0 0 1440 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="2077px" height="1156px" viewBox="0 0 2077 1156" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>Desktop HD</title>
+    <title>bg</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <circle id="path-1" cx="1622.5" cy="552.5" r="452.5"></circle>
@@ -9,8 +9,8 @@
         <circle id="path-3" cx="452.5" cy="904.5" r="249.5"></circle>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD">
-            <g id="Group-3" transform="translate(-453.000000, 0.000000)">
+        <g id="Artboard-2" transform="translate(-362.000000, -255.000000)">
+            <g id="bg" transform="translate(363.000000, 133.000000)">
                 <g id="Group-2" transform="translate(0.000000, 123.000000)">
                     <g id="Oval-2-Copy" opacity="0.234263393">
                         <use stroke="#979797" xlink:href="#path-1"></use>
